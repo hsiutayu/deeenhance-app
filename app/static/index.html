@@ -1,0 +1,52 @@
+<head>
+	<title>Deep Resolution Enhancement</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<a href="/"><img height="34" width="34" src="static/images/25694.png" ></a>
+			<span class="contact100-form-title">Image Enhancer</span>
+			<form class="contact100-form validate-form" action="/upload" method="post" enctype="multipart/form-data">
+				<div class="wrap-input100 validate-input" data-validate = "Valid image file is required: jpg or png">
+					<p class="label-input100">Select Only One Image File</p>
+					<p class="label-input10">Note: output image limited to 1000x1000 pixels due to memory and compute constraints</p>
+					<p class="label-input10">Image sizes around 400x400 - 600x600 work best for visual effect</p>
+					<input id="inp_file" type="file" name="file" >
+					<input id="inp_img" type="hidden" name="img" value="">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div>
+					<img id="image-picked" class="image-display">
+				</div>
+				
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button type = "button" id = "submit_btn" class="contact100-form-btn">
+							<span class="topline-form-btn">
+								Upload & Analyze Image
+								<span class="subline-form-btn">
+									(May take a few moments)
+								</span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+			<div
+				class="navbar">
+					<a href="https://github.com/kheyer/Enhance-app" target="_blank"><img src="static/images/github.png" target="_blank", height=42, width=42 /></a>
+			</div>
+		</div>
+	</div>
+<script src="static/js/utility.js"></script>
+</body>
+</html>
